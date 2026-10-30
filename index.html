@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8" data-skunkworks-head="mandatory-v2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Student | Skunkworks Academy</title>
+  <meta name="description" content="Skunkworks Academy student workspace for learning, classes, achievements, resources, messages and AI-assisted study." />
+  <meta name="robots" content="index, follow" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="canonical" href="https://student.skunkworksacademy.com/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.skunkworksacademy.com/images/favicon-black.png?v=2026.08.25.1" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.skunkworksacademy.com/images/favicon-white.png?v=2026.08.25.1" media="(prefers-color-scheme: dark)" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.skunkworksacademy.com/assets/academy-brand-theme.css?v=2026.08.22.2" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://www.skunkworksacademy.com/assets/academy-navigation.js?v=2026.08.23.1" data-skunkworks-global-nav="v10"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#student-main">Skip to student content</a>
+  <div class="student-shell">
+    <aside class="student-sidebar" aria-label="Student navigation">
+      <a class="student-brand" href="https://www.skunkworksacademy.com/" aria-label="Skunkworks Academy home">
+        <span class="student-brand-mark" aria-hidden="true"><img src="https://www.skunkworksacademy.com/images/favicon-white.png?v=2026.08.25.1" alt="" /></span>
+        <span><strong>Skunkworks</strong><small>Academy · Student</small></span>
+      </a>
+      <nav class="student-nav" aria-label="Student workspace sections">
+        <button type="button" class="student-nav-item active" data-view="dashboard" aria-current="page"><span>⌂</span>Dashboard</button>
+        <button type="button" class="student-nav-item" data-view="learning"><span>◈</span>My learning</button>
+        <button type="button" class="student-nav-item" data-view="classes"><span>◫</span>Classes</button>
+        <button type="button" class="student-nav-item" data-view="achievements"><span>✦</span>Achievements</button>
+        <button type="button" class="student-nav-item" data-view="resources"><span>▤</span>Resources</button>
+        <button type="button" class="student-nav-item" data-view="messages"><span>✉</span>Messages</button>
+        <button type="button" class="student-nav-item" data-view="companion"><span>✺</span>AI Companion</button>
+        <button type="button" class="student-nav-item" data-view="profile"><span>◌</span>Profile & settings</button>
+      </nav>
+      <div class="student-sidebar-footer">
+        <a class="student-profile-link" href="https://portal.skunkworksacademy.com/">
+          <span class="student-avatar">S</span>
+          <span><strong>Student account</strong><small>Microsoft Entra sign-in</small></span>
+        </a>
+        <a class="student-signin-link" href="https://portal.skunkworksacademy.com/">Sign in to portal</a>
+      </div>
+    </aside>
+
+    <section class="student-workspace">
+      <header class="student-topbar">
+        <div><p class="student-kicker">Student Portal</p><h1 id="viewTitle">Your dashboard</h1></div>
+        <label class="student-search"><span aria-hidden="true">⌕</span><input id="courseSearch" type="search" placeholder="Search courses and resources" aria-label="Search courses and resources" /></label>
+      </header>
+
+      <main id="student-main" class="student-main">
+        <section class="student-view active" data-panel="dashboard" aria-label="Student dashboard">
+          <div class="student-hero-card">
+            <div>
+              <p class="student-kicker">Your study plan</p>
+              <h2>Small, consistent sessions build real confidence.</h2>
+              <p>Continue where you left off, reserve a class, or use your AI learning companion to plan the next focused study block.</p>
+              <div class="student-action-row">
+                <button type="button" data-go="learning">Continue learning</button>
+                <button type="button" class="student-secondary-action" data-go="companion">Ask Skunkie</button>
+              </div>
+            </div>
+            <div class="student-progress-orbit" aria-label="62% weekly progress"><strong>62%</strong><span>weekly goal</span></div>
+          </div>
+          <div class="student-stat-grid">
+            <article class="student-stat"><strong>12</strong><span>Available courses</span></article>
+            <article class="student-stat"><strong>2</strong><span>Class registrations</span></article>
+            <article class="student-stat"><strong>5 days</strong><span>Learning streak</span></article>
+          </div>
+          <div class="student-two-column">
+            <article class="student-panel"><div class="student-panel-heading"><div><p class="student-kicker">Next up</p><h2>AI Fundamentals</h2></div><button type="button" class="student-text-button" data-go="learning">View learning</button></div><p>Build practical AI literacy through applied prompts, governance concepts and workplace use cases.</p><div class="student-linear-progress"><span style="width:62%"></span></div><span class="student-muted">62% of current study target</span></article>
+            <article class="student-panel"><div class="student-panel-heading"><div><p class="student-kicker">Classes</p><h2>Cloud foundations study group</h2></div><button type="button" class="student-text-button" data-go="classes">View classes</button></div><p>Thursday · 18:00 SAST · Live online</p><span class="student-muted">12 of 20 seats reserved</span></article>
+          </div>
+        </section>
+
+        <section class="student-view" data-panel="learning" aria-label="My learning">
+          <div class="student-section-heading"><div><p class="student-kicker">Learning library</p><h2>Choose your next learning step</h2><p>Practical pathways, labs and certification-aligned learning.</p></div><span class="student-count" id="courseCount">6 courses</span></div>
+          <div class="student-course-grid" id="courseGrid">
+            <article class="student-course-card" data-search="ai fundamentals artificial intelligence beginner"><div class="student-course-art"><span>Beginner</span></div><div class="student-course-copy"><span class="student-status">Live</span><h2>AI Fundamentals</h2><p>Applied AI concepts, prompts, responsible use and workplace automation.</p><small>6 hours</small><a href="https://www.skunkworksacademy.com/self-paced/">Explore course →</a></div></article>
+            <article class="student-course-card" data-search="azure cloud fundamentals microsoft beginner"><div class="student-course-art"><span>Beginner</span></div><div class="student-course-copy"><span class="student-status">Live</span><h2>Azure Fundamentals</h2><p>Core cloud services, governance, identity and cost concepts.</p><small>8 hours</small><a href="https://www.skunkworksacademy.com/microsoft/">Explore course →</a></div></article>
+            <article class="student-course-card" data-search="cyber security zero trust intermediate"><div class="student-course-art"><span>Intermediate</span></div><div class="student-course-copy"><span class="student-status">Live</span><h2>Zero-Trust Security</h2><p>Identity-first security, least privilege and modern defensive controls.</p><small>10 hours</small><a href="https://security.skunkworksacademy.com/">Explore course →</a></div></article>
+            <article class="student-course-card" data-search="python programming beginner development"><div class="student-course-art"><span>Beginner</span></div><div class="student-course-copy"><span class="student-status">Live</span><h2>Python Foundations</h2><p>Core Python syntax, data structures and practical automation.</p><small>12 hours</small><a href="https://www.skunkworksacademy.com/python/">Explore course →</a></div></article>
+            <article class="student-course-card" data-search="json api interface design developer"><div class="student-course-art"><span>Intermediate</span></div><div class="student-course-copy"><span class="student-status">Live</span><h2>JSON & API Interface Design</h2><p>Design structured payloads, interfaces and integration-ready learning projects.</p><small>7 hours</small><a href="https://www.skunkworksacademy.com/self-paced/json-course-interface-design/">Explore course →</a></div></article>
+            <article class="student-course-card" data-search="owasp secure coding security developer"><div class="student-course-art"><span>Intermediate</span></div><div class="student-course-copy"><span class="student-status">Live</span><h2>Secure Coding with OWASP</h2><p>Apply OWASP Top 10 controls to safer application development.</p><small>9 hours</small><a href="https://www.skunkworksacademy.com/self-paced/secure-coding-owasp-top-10/">Explore course →</a></div></article>
+          </div>
+        </section>
+
+        <section class="student-view" data-panel="classes" aria-label="Classes"><div class="student-section-heading"><div><p class="student-kicker">Live learning</p><h2>Classes and study sessions</h2><p>Use the Academy portal to register and keep your live-learning schedule in one place.</p></div></div><div class="student-session-list"><article class="student-session-card"><div><strong>Thu · 18:00</strong><span>Live online</span></div><div><span class="student-status">Open</span><h2>Cloud foundations study group</h2><p>Microsoft Azure Fundamentals</p></div><a class="student-action-link" href="https://portal.skunkworksacademy.com/">Register</a></article><article class="student-session-card"><div><strong>Sat · 09:00</strong><span>Hybrid</span></div><div><span class="student-status">Open</span><h2>Security lab clinic</h2><p>Zero-Trust Security</p></div><a class="student-action-link" href="https://portal.skunkworksacademy.com/">Register</a></article></div></section>
+
+        <section class="student-view" data-panel="achievements" aria-label="Achievements"><div class="student-section-heading"><div><p class="student-kicker">Your milestones</p><h2>Achievements and credentials</h2><p>Certificates, badges and capability evidence stay connected to your learner profile.</p></div></div><div class="student-achievement-grid"><article class="student-achievement"><span>✦</span><h2>Learning journey</h2><p>Track progress across active courses and pathways.</p></article><article class="student-achievement"><span>◫</span><h2>Class commitment</h2><p>Live-session participation contributes to your learning evidence.</p></article><article class="student-achievement"><span>◌</span><h2>Credential pathway</h2><p>Connect Academy completion evidence to recognised credentials.</p></article></div></section>
+
+        <section class="student-view" data-panel="resources" aria-label="Resources"><div class="student-section-heading"><div><p class="student-kicker">Study support</p><h2>Resources worth saving</h2><p>Labs, documentation and practical references for active learning.</p></div></div><div class="student-resource-list"><a href="https://labs.skunkworksacademy.com/"><span>Hands-on labs</span><div><h2>Academy Labs</h2><p>Launch guided technical labs and sandboxes.</p></div><strong>→</strong></a><a href="https://docs.skunkworksacademy.com/"><span>Documentation</span><div><h2>Academy Docs</h2><p>Implementation guidance and technical references.</p></div><strong>→</strong></a><a href="https://www.skunkworksacademy.com/self-paced/"><span>Catalogue</span><div><h2>Self-paced learning</h2><p>Browse practical course overviews and learning paths.</p></div><strong>→</strong></a></div></section>
+
+        <section class="student-view" data-panel="messages" aria-label="Messages"><div class="student-section-heading"><div><p class="student-kicker">Messages</p><h2>Learning updates</h2><p>Keep class, pathway and support notifications close to your learning plan.</p></div></div><div class="student-message-layout"><div class="student-message-list"><button type="button" class="active" data-message="class"><strong>Cloud foundations class</strong><span>Today · Action available</span></button><button type="button" data-message="plan"><strong>Your learning plan is ready</strong><span>Yesterday</span></button><button type="button" data-message="welcome"><strong>Welcome to Skunkworks Academy</strong><span>2 days ago</span></button></div><article class="student-message-detail" id="messageDetail"><p class="student-kicker">Today</p><h2>New class added: Cloud foundations</h2><p>A Cloud foundations study group is available this Thursday at 18:00. Reserve your place from the Portal.</p></article></div></section>
+
+        <section class="student-view" data-panel="companion" aria-label="AI Companion"><div class="student-companion-view"><div class="student-companion-header"><div class="student-skunkie-avatar">S</div><div><p class="student-kicker">AI learning companion</p><h2>Skunkie</h2><span>Plan, explain, practise, check.</span></div></div><div class="student-chat-log" id="chatLog"><div class="student-chat-message"><strong>Skunkie</strong><p>Tell me what you are learning and I will help you turn it into a focused next step.</p></div></div><div class="student-prompt-suggestions"><button type="button">Plan a 30-minute study session</button><button type="button">Quiz me on cloud fundamentals</button><button type="button">Explain zero trust simply</button></div><form class="student-composer" id="chatForm"><input id="chatInput" type="text" placeholder="Ask Skunkie…" aria-label="Ask Skunkie" /><button type="submit">Send</button></form></div></section>
+
+        <section class="student-view" data-panel="profile" aria-label="Profile and settings"><div class="student-section-heading"><div><p class="student-kicker">Account</p><h2>Profile & settings</h2><p>Your authenticated learner profile, enrolments and preferences are managed through the Academy Portal.</p></div></div><div class="student-profile-card"><span class="student-avatar large">S</span><h2>Student learner profile</h2><p>Microsoft Entra authentication, personal details, course registrations and access rights remain managed by the Portal.</p><a class="student-action-link" href="https://portal.skunkworksacademy.com/">Open account settings</a></div></section>
+      </main>
+    </section>
+  </div>
+</body>
+</html>
